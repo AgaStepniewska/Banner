@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900");
+@font-face {
+  font-family: "SkyText-Bold";
+  src: url("fonts/SkyText-Bold.ttf"); }
+@font-face {
+  font-family: "SkyTextMedium-Regular";
+  src: url("fonts/SkyTextMedium-Regular.ttf"); }
+@font-face {
+  font-family: "SkyText-Regular";
+  src: url("fonts/SkyText-Regular.ttf"); }
+body {
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fceee3; }
+
+header {
+  max-width: 100%;
+  height: 13vh;
+  display: flex;
+  dlex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff; }
+  header .skylogo {
+    max-width: 82px;
+    height: auto;
+    margin: 2% 3% 2% 7%; }
+  header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    font-family: "SkyText-Regular"; }
+    header ul li {
+      display: inline-block;
+      padding-right: 35px; }
+    header ul a {
+      line-height: 20px;
+      padding: 0;
+      display: block;
+      color: #25242c;
+      font-size: 25px;
+      text-decoration: none; }
+      header ul a:hover {
+        text-decoration: underline; }
+  header .fa {
+    font-size: 25px;
+    padding: 20px;
+    position: absolute; }
+  header .fa-envelope-o {
+    right: 15%; }
+  header .fa-search {
+    right: 20%; }
+
+@keyframes changeTextColor {
+  0% {
+    color: yellow; }
+  20% {
+    color: orange; }
+  40% {
+    color: red; }
+  60% {
+    color: purple; }
+  80% {
+    color: blue; }
+  100% {
+    color: green; } }
+@-webkit-keyframes changeTextColor {
+  0% {
+    color: yellow; }
+  20% {
+    color: orange; }
+  40% {
+    color: red; }
+  60% {
+    color: purple; }
+  80% {
+    color: blue; }
+  100% {
+    color: green; } }
+.banner {
+  max-width: 70%;
+  margin: 5% auto 0;
+  height: 100vh; }
+  .banner .container {
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.5); }
+    .banner .container img {
+      width: 50px;
+      height: auto;
+      margin: 3% 8%; }
+    .banner .container .slogan {
+      max-width: 80%;
+      margin: auto; }
+      .banner .container .slogan h1 {
+        font-family: "SkyText-Regular";
+        text-align: center;
+        font-size: 24px;
+        padding-top: 20px;
+        margin: 0; }
+        .banner .container .slogan h1 .firstPart {
+          color: yellow;
+          animation-name: changeTextColor;
+          animation-duration: 5s;
+          -webkit-animation-name: changeTextColor;
+          -webkit-animation-duration: 4s; }
+        .banner .container .slogan h1 .secondPart {
+          color: orange;
+          animation-name: changeTextColor;
+          animation-duration: 5s;
+          -webkit-animation-name: changeTextColor;
+          -webkit-animation-duration: 5s; }
+        .banner .container .slogan h1 .thirdPart {
+          color: red;
+          animation-name: changeTextColor;
+          animation-duration: 5s;
+          -webkit-animation-name: changeTextColor;
+          -webkit-animation-duration: 5s; }
+        .banner .container .slogan h1 .fourthPart {
+          color: purple;
+          animation-name: changeTextColor;
+          animation-duration: 5s;
+          -webkit-animation-name: changeTextColor;
+          -webkit-animation-duration: 5s; }
+        .banner .container .slogan h1 .fifthPart {
+          color: blue;
+          animation-name: changeTextColor;
+          animation-duration: 5s;
+          -webkit-animation-name: changeTextColor;
+          -webkit-animation-duration: 5s; }
+      .banner .container .slogan p {
+        font-family: "SkyText-Bold";
+        color: #535b94;
+        text-align: center;
+        font-size: 14px;
+        margin: 0; }
+
+.rowWheel {
+  width: 90%;
+  margin: 10% auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .rowWheel .wheelshadow {
+    box-shadow: -1px 10px 10px -9px;
+    margin-right: 5%;
+    margin-left: 5%; }
+  .rowWheel .wheels {
+    width: 85px;
+    height: 85px;
+    font-size: 10px;
+    border-radius: 50px; }
+  .rowWheel .wheelL {
+    color: #fff;
+    background-color: #25242c; }
+    .rowWheel .wheelL .contain {
+      max-width: 61%;
+      margin: auto; }
+    .rowWheel .wheelL .picture {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      padding-top: 15px; }
+      .rowWheel .wheelL .picture .word {
+        font-size: 13px;
+        margin: 0 1px;
+        font-family: "SkyTextMedium-Regular";
+        padding: 0;
+        line-height: 11px;
+        letter-spacing: -1px; }
+      .rowWheel .wheelL .picture .red,
+      .rowWheel .wheelL .picture .yellow,
+      .rowWheel .wheelL .picture .pink,
+      .rowWheel .wheelL .picture .yellow2,
+      .rowWheel .wheelL .picture .blue {
+        width: 3px;
+        margin: 0; }
+      .rowWheel .wheelL .picture .red {
+        height: 6px;
+        background-color: red; }
+        .rowWheel .wheelL .picture .red .color1 {
+          height: 2px;
+          background-color: pink; }
+      .rowWheel .wheelL .picture .bar {
+        line-height: 100%;
+        margin: 0; }
+      .rowWheel .wheelL .picture .yellow {
+        height: 4px;
+        background-color: yellow; }
+      .rowWheel .wheelL .picture .pink {
+        height: 8px;
+        background-color: purple; }
+        .rowWheel .wheelL .picture .pink .color3 {
+          height: 4px;
+          background-color: #cdccd5; }
+      .rowWheel .wheelL .picture .yellow2 {
+        height: 6px;
+        background-color: yellow; }
+        .rowWheel .wheelL .picture .yellow2 .color4 {
+          height: 2px;
+          background-color: #fcfcbd; }
+      .rowWheel .wheelL .picture .blue {
+        height: 10px;
+        background-color: #07eae6; }
+        .rowWheel .wheelL .picture .blue .color5 {
+          height: 4px;
+          background-color: #def9f9; }
+  .rowWheel p {
+    line-height: 9px;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  .rowWheel .year {
+    font-size: 10.5px;
+    font-family: "SkyText-Regular";
+    letter-spacing: -1; }
+  .rowWheel .unlim {
+    font-size: 11px;
+    font-family: "SkyTextMedium-Regular";
+    letter-spacing: 0; }
+  .rowWheel .music {
+    font-family: "SkyText-Bold";
+    letter-spacing: 0;
+    font-size: 18.5px;
+    line-height: 13px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px; }
+  .rowWheel .worth {
+    font-size: 9px;
+    font-family: "SkyText-Regular";
+    line-height: 12px; }
+  .rowWheel .wheelR {
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #758e30; }
+  .rowWheel .MS {
+    font-size: 18px;
+    font-family: "SkyText-Regular";
+    background: linear-gradient(to right, #9fce66, #758e30);
+    border-radius: 50px;
+    width: 84px;
+    height: 84px;
+    letter-spacing: -1;
+    overflow: hidden; }
+    .rowWheel .MS .toptext {
+      background-color: #fff;
+      line-height: 18px;
+      max-height: 55%;
+      margin: auto;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border: 2px solid #758e30;
+      font-size: 19px;
+      font-family: "Raleway", sans-serif;
+      padding-top: 10px;
+      margin: 0; }
+      .rowWheel .MS .toptext span {
+        color: #758e30;
+        font-family: "Raleway", sans-serif; }
+      .rowWheel .MS .toptext .value {
+        font-family: "SkyTextMedium-Regular";
+        font-size: 35px;
+        font-weight: 800;
+        text-align: center;
+        margin: 0;
+        color: black;
+        line-height: 25px; }
+        .rowWheel .MS .toptext .value span {
+          font-size: 18px;
+          color: black; }
+    .rowWheel .MS .voucher {
+      font-size: 12px;
+      line-height: 12px;
+      color: #fff; }
+
+#js-buttonMore {
+  width: 160px;
+  height: 70px;
+  color: #fff;
+  box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 44%;
+  top: 70%;
+  font-size: 18px;
+  font-family: #js-buttonMore font4;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none; }
+
+footer {
+  max-width: 100%;
+  height: 7vh;
+  background-color: #fff;
+  text-align: center;
+  font-family: "SkyTextMedium-Regular";
+  font-size: 20px; }
+  footer p {
+    font-size: 14px;
+    margin-top: 0; }
+
+@media(min-width: 768px) and (max-width: 1199px), (max-width: 768px) {
+  header .fa {
+    display: none; }
+  header nav a {
+    font-size: 16px; }
+
+  #js-buttonMore {
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+    left: 40%;
+    top: 65%; } }
